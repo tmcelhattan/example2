@@ -3,7 +3,7 @@ service:
   port: 80
   hostPatterns: 
   - treys.*
-  imageRepository: arn:aws:ecr:us-east-2:324320755747:repository/muexample:1dee65c
+  imageRepository: 324320755747.dkr.ecr.us-east-2.amazonaws.com/muexample:1dee65c
 
 templates:
   mu-service-example2-pims-prod:
@@ -18,6 +18,6 @@ templates:
             - Sid: Stmt1501642480631
               Action: ecr:*
               Effect: Allow
-              Resource: arn:aws:ecr:us-east-2:324320755747:repository/muexample
+              Resource: arn:aws:ecr:us-east-2:324320755747:repository/muexample/*
           Roles: 
             - Ref: EcsTaskRole
