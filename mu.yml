@@ -4,6 +4,7 @@ service:
   hostPatterns: 
   - treys.*
   imageRepository: 324320755747.dkr.ecr.us-east-2.amazonaws.com/muexample:f4c8eb0
+  healthEndpoint: /index.html
 
 templates:
   mu-service-example2-pims-prod:
