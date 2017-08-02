@@ -3,4 +3,4 @@ service:
   port: 80
   hostPatterns: 
   - treys.*
-  imageRepository: muexample/7070a0b
+  imageRepository: muexample/1dee65c
