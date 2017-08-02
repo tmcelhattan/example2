@@ -3,16 +3,4 @@ service:
   port: 80
   hostPatterns: 
   - treys.*
-  pipeline:
-    source:
-      provider: GitHub
-      repo: tmcelhattan/muexample
-    build:
-      image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.6
-      disabled: true
-    acceptance:
-      image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.6
-      disabled: true
-      environment: pims-dev
-    production:
-      environment: mu-environment-pims-prod
+  imageRepository: muexample/7070a0b
