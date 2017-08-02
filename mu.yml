@@ -4,3 +4,20 @@ service:
   hostPatterns: 
   - treys.*
   imageRepository: muexample/1dee65c
+
+templates:
+  mu-service-example2-pims-prod:
+    Resources:
+      ParameterStorePolicy: 
+        Type: "AWS::IAM::Policy"
+        Properties: 
+          PolicyName: "ecrpolicy"
+          PolicyDocument: 
+            Version: '2012-10-17'
+            Statement:
+            - Sid: Stmt1501642480631
+              Action: ecr:*
+              Effect: Allow
+              Resource: arn:aws:ecr:us-east-2:324320755747:repository/muexample
+          Roles: 
+            - Ref: EcsTaskRole
