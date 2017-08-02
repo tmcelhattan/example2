@@ -3,7 +3,7 @@ service:
   port: 80
   hostPatterns: 
   - treys.*
-  imageRepository: muexample/1dee65c
+  imageRepository: arn:aws:ecr:us-east-2:324320755747:repository/muexample:1dee65c
 
 templates:
   mu-service-example2-pims-prod:
