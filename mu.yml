@@ -1,6 +1,6 @@
 service:
   name: example2
-  port: 3000
+  port: 80
   hostPatterns: 
   - treys.*
   imageRepository: muexample/7070a0b
