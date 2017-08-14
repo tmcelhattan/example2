@@ -3,7 +3,7 @@ service:
   port: 80
   hostPatterns: 
   - treys.*
-  imageRepository: 324320755747.dkr.ecr.us-east-2.amazonaws.com/muexample:f4c8eb0
+  imageRepository: !Sub ${AWS::AccountId}.dkr.ecr.us-east-2.amazonaws.com/muexample:2d43f48
   healthEndpoint: /index.html
 
 templates:
